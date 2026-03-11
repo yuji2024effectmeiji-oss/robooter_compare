@@ -53,13 +53,13 @@
     }
 
     .stage {
-  position: relative;
-  min-height: 680px;
-  border-radius: 12px;
-  background: #CAECFC;
-  overflow: hidden;
-  border: 1px solid #e9e9e9;
-}
+      position: relative;
+      min-height: 680px;
+      border-radius: 12px;
+      background: #CAECFC;
+      overflow: hidden;
+      border: 1px solid #e9e9e9;
+    }
 
     .stage-inner {
       position: relative;
@@ -114,8 +114,8 @@
     }
 
     .model-btn.active {
-      background: #00a651;
-      border-color: #00a651;
+      background: #4E6DFF;
+      border-color: #4E6DFF;
       color: #fff;
       font-weight: 700;
     }
@@ -135,15 +135,17 @@
       padding: 14px 12px;
       font-size: 14px;
       text-align: center;
+      vertical-align: middle;
+      transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     thead th {
-      background: #f7f7f7;
+      background: #fff;
       font-weight: 700;
     }
 
     tbody th {
-      background: #fcfcfc;
+      background: #fff;
       text-align: center;
       white-space: nowrap;
       width: 28%;
@@ -155,15 +157,21 @@
     }
 
     .model-head.active {
-      background: #00a651;
+      background: #4E6DFF;
       color: #fff;
+    }
+
+    td.active-col {
+      background: rgba(78, 109, 255, 0.20);
+      color: #2f3b66;
     }
 
     .note {
       padding: 14px 16px;
       font-size: 12px;
       color: #777;
-      background: #fafafa;
+      background: #fff;
+      line-height: 1.7;
     }
 
     @media (max-width: 980px) {
@@ -219,14 +227,14 @@
           <div class="stage-inner">
             <img src="E40_.svg" alt="E40" class="svg-layer active" data-model="E40">
             <img src="E60_.svg" alt="E60" class="svg-layer" data-model="E60">
-            <img src="E60PRO-A_.svg" alt="E60PRO-A" class="svg-layer" data-model="E60PRO-A">
+            <img src="E60pro-A_.svg" alt="E60pro-A" class="svg-layer" data-model="E60pro-A">
           </div>
         </div>
 
         <div class="controls">
           <button class="model-btn active" data-model="E40">E40</button>
           <button class="model-btn" data-model="E60">E60</button>
-          <button class="model-btn" data-model="E60PRO-A">E60PRO-A</button>
+          <button class="model-btn" data-model="E60pro-A">E60PRO-A</button>
         </div>
       </section>
 
@@ -237,69 +245,69 @@
               <th>機　種</th>
               <th class="model-head active" data-model="E40">E40</th>
               <th class="model-head" data-model="E60">E60</th>
-              <th class="model-head" data-model="E60PRO-A">E60PRO-A</th>
+              <th class="model-head" data-model="E60pro-A">E60PRO-A</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>全　　長</th>
-              <td>1000mm</td>
-              <td>987mm</td>
-              <td>1052mm</td>
+              <th>全長</th>
+              <td data-model="E40">1000mm</td>
+              <td data-model="E60">987mm</td>
+              <td data-model="E60pro-A">1052mm</td>
             </tr>
             <tr>
-              <th>全　　幅</th>
-              <td>624mm</td>
-              <td>640mm</td>
-              <td>640mm</td>
+              <th>全幅</th>
+              <td data-model="E40">624mm</td>
+              <td data-model="E60">640mm</td>
+              <td data-model="E60pro-A">640mm</td>
             </tr>
             <tr>
-              <th>全　　高</th>
-              <td>930mm</td>
-              <td>932mm</td>
-              <td>956mm</td>
+              <th>全高</th>
+              <td data-model="E40">930mm</td>
+              <td data-model="E60">932mm</td>
+              <td data-model="E60pro-A">956mm</td>
             </tr>
             <tr>
               <th>折りたたみ時全長</th>
-              <td>700mm</td>
-              <td>770mm</td>
-              <td>855mm</td>
+              <td data-model="E40">700mm</td>
+              <td data-model="E60">770mm</td>
+              <td data-model="E60pro-A">855mm</td>
             </tr>
             <tr>
               <th>折りたたみ時</th>
-              <td>624mm</td>
-              <td>640mm</td>
-              <td>640mm</td>
+              <td data-model="E40">624mm</td>
+              <td data-model="E60">640mm</td>
+              <td data-model="E60pro-A">640mm</td>
             </tr>
             <tr>
               <th>折りたたみ時全高</th>
-              <td>450mm</td>
-              <td>500mm</td>
-              <td>525mm</td>
+              <td data-model="E40">450mm</td>
+              <td data-model="E60">500mm</td>
+              <td data-model="E60pro-A">525mm</td>
             </tr>
             <tr>
               <th>重量（本体）</th>
-              <td>24.2kg</td>
-              <td>29kg</td>
-              <td>32.2kg</td>
+              <td data-model="E40">24.2kg</td>
+              <td data-model="E60">29kg</td>
+              <td data-model="E60pro-A">32.2kg</td>
             </tr>
             <tr>
-              <th>前　　輪</th>
-              <td>8inchハニカムキャスタータイヤ</td>
-              <td>10inchオムニホイール+サスペンション</td>
-              <td>12inchオムニホイール+サスペンション</td>
+              <th>前輪</th>
+              <td data-model="E40">8inchハニカムキャスタータイヤ</td>
+              <td data-model="E60">10inchオムニホイール + サスペンション</td>
+              <td data-model="E60pro-A">12inchオムニホイール + サスペンション</td>
             </tr>
             <tr>
-              <th>後　　輪</th>
-              <td>10inch空気入タイヤ</td>
-              <td>10inch空気入タイヤ</td>
-              <td>12inch空気入タイヤ</td>
+              <th>後輪</th>
+              <td data-model="E40">10inch空気入タイヤ</td>
+              <td data-model="E60">10inch空気入タイヤ</td>
+              <td data-model="E60pro-A">12inch空気入タイヤ</td>
             </tr>
           </tbody>
         </table>
 
         <div class="note">
-          バッテリー重量：いずれも2.8kg／E60PRO-Aのみアームレスト幅(45.5〜51.5cm)、背もたれ角度(108°〜138°)の範囲で調整可能
+          バッテリー重量：いずれも2.8kg／E60PRO-Aのみアームレスト幅（45.5〜51.5cm）、背もたれ角度（108°〜138°）の範囲で調整可能
         </div>
       </section>
     </div>
@@ -309,6 +317,7 @@
     const buttons = document.querySelectorAll('.model-btn');
     const heads = document.querySelectorAll('.model-head');
     const layers = document.querySelectorAll('.svg-layer');
+    const valueCells = document.querySelectorAll('tbody td[data-model]');
 
     function setModel(model) {
       buttons.forEach(btn => {
@@ -321,6 +330,10 @@
 
       layers.forEach(layer => {
         layer.classList.toggle('active', layer.dataset.model === model);
+      });
+
+      valueCells.forEach(cell => {
+        cell.classList.toggle('active-col', cell.dataset.model === model);
       });
     }
 
